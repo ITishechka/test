@@ -1,0 +1,14 @@
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\Windows\SupplierEditWindow.baml
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\Windows\SupplierEditWindow.g.cs
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\MadkDE_MarkupCompile.cache
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\MadkDE.g.resources
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\MadkDE.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\MadkDE.AssemblyInfoInputs.cache
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\MadkDE.AssemblyInfo.cs
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\MadkDE.csproj.CoreCompileInputs.cache
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\Windows\LoginWindow.baml
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\Windows\LoginWindow.g.cs
+C:\Users\Администратор\source\repos\MadkDE\MadkDE\obj\Debug\net8.0-windows\MadkDE.csproj.AssemblyReference.cache
