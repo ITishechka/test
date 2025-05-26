@@ -1,0 +1,52 @@
+-- Типы материалов
+INSERT INTO MaterialType (Name, WastePercentage)
+VALUES 
+('Пластичные материалы', 0.12),
+('Добавка', 0.20),
+('Электролит', 0.15),
+('Глазурь', 0.30),
+('Пигмент', 0.25);
+
+-- Материалы
+INSERT INTO Material (Name, MaterialTypeID, UnitPrice, QuantityInStock, MinQuantity, QuantityPerPackage, Unit)
+VALUES 
+('Глина', 1, 15.29, 1570.00, 5500.00, 30, 'кг'),
+('Каолин', 1, 18.20, 1030.00, 3500.00, 25, 'кг'),
+('Гидрослюда', 1, 17.20, 2147.00, 3500.00, 25, 'кг'),
+('Монтмориллонит', 1, 17.67, 3000.00, 3000.00, 30, 'кг'),
+('Перлит', 2, 13.99, 150.00, 1000.00, 50, 'л');
+
+-- Поставщики
+INSERT INTO Supplier (Name, SupplierType, INN, Rating, StartDate)
+VALUES 
+('БрянскСтройресурс', 'ЗАО', '9432455179', 8, '2015-12-20'),
+('Железногорская руда', 'ООО', '8430391035', 7, '2016-12-23'),
+('ВоронежРудоКомбинат', 'ООО', '4318170454', 8, '2019-05-27'),
+('Арсенал', 'ООО', '7687851800', 7, '2015-06-16');
+
+-- Связи Материал-Поставщик
+-- Каолин – Железногорская руда, ВоронежРудоКомбинат
+-- Стекло – Арсенал
+-- Кварцевый песок – БрянскСтройресурс
+-- Краска-раствор – Арсенал
+INSERT INTO MaterialSupplier (MaterialID, SupplierID)
+VALUES 
+((SELECT MaterialID FROM Material WHERE Name = 'Каолин'), (SELECT SupplierID FROM Supplier WHERE Name = 'Железногорская руда')),
+((SELECT MaterialID FROM Material WHERE Name = 'Каолин'), (SELECT SupplierID FROM Supplier WHERE Name = 'ВоронежРудоКомбинат')),
+((SELECT MaterialID FROM Material WHERE Name = 'Краска-раствор'), (SELECT SupplierID FROM Supplier WHERE Name = 'Арсенал')),
+((SELECT MaterialID FROM Material WHERE Name = 'Стекло'), (SELECT SupplierID FROM Supplier WHERE Name = 'Арсенал')),
+((SELECT MaterialID FROM Material WHERE Name = 'Кварцевый песок'), (SELECT SupplierID FROM Supplier WHERE Name = 'БрянскСтройресурс'));
+
+-- Типы продукции
+INSERT INTO ProductType (Name, Coefficient)
+VALUES 
+('Тип продукции 1', 1.20),
+('Тип продукции 2', 8.59),
+('Тип продукции 3', 3.45),
+('Тип продукции 4', 5.60);
+
+INSERT INTO [User] (Username, PasswordHash, Role)
+VALUES
+('admin', 'admin123', 'Администратор'),
+('user1', 'user123', 'Пользователь');
+
